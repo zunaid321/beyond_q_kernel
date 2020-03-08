@@ -23,14 +23,8 @@ jobs:
         sudo mv avbtool /usr/local/bin/avbtool
     - name: Clone Submodules
       run: git submodule update --init --recursive
-    - name: Kernel Configure
-      run: |
-        ./build config           \
-                model=G975F      \
-                name=CRUEL-V3-Zunaid-Los    \
-                +magisk          \
     - name: Kernel Build
-      run: ./build :build
+      run: ./build :beyond2lte
     - name: Create boot.img
       run: ./build :mkimg
     - name: Show information about build
