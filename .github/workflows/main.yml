@@ -24,7 +24,7 @@ jobs:
     - name: Clone Submodules
       run: git submodule update --init --recursive
     - name: Kernel Build
-      run: ./build :beyond2lte
+      run: build.sh beyond2lte
     - name: Create boot.img
       run: ./build :mkimg
     - name: Show information about build
