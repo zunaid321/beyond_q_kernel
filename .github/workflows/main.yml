@@ -11,12 +11,10 @@ jobs:
     - uses: actions/checkout@v1
     - name: Kernel Build
       run: source build.sh beyond2lte
-    - name: Show information about build
-      run: cat build.info
     - name: Upload Kernel
       uses: actions/upload-artifact@v1
       with:
-        name: CruelKernelLos
+        name: Los-Zunaid
         path: boot.img
     - name: Upload Kernel Info
       uses: actions/upload-artifact@v1
