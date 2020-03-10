@@ -21,5 +21,3 @@ jobs:
       with:
         name: Los-Zunaid
         path: build/beyond2lte-eur.img
-    - name: Upload Kernel Info
-      uses: actions/upload-artifact@v1
