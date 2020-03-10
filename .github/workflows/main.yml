@@ -15,4 +15,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: Los-Zunaid
-        path: build/*.img
+        path: build/beyond2lte-eur.img
