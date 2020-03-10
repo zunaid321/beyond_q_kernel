@@ -18,6 +18,3 @@ jobs:
         path: build/beyond2lte-eur.img
     - name: Upload Kernel Info
       uses: actions/upload-artifact@v1
-      with:
-        name: ConfigurationInfo
-        path: build.info
