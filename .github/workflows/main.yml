@@ -9,11 +9,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Kernel Configure
-      run: |
-        build config           \
-                model=G975F      \
-                name=LOS-Zunaid  \
     - name: Kernel Build
       run: source build.sh beyond2lte
     - name: Upload Kernel
