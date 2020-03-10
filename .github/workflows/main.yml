@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Kernel Configure
       run: |
-        ./build config           \
+        build config           \
                 model=G975F      \
                 name=LOS-Zunaid  \
     - name: Kernel Build
